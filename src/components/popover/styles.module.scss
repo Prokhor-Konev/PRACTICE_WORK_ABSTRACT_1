@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+
+    padding: 12px;
+    min-width: 260px;
+    box-sizing: border-box;
+
+    color: var(--black);
+    font-family: var(--font);
+    font-size: var(--sm);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}

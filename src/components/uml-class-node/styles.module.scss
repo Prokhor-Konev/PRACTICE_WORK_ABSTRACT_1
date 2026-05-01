@@ -1,0 +1,77 @@
+.node {
+    width: fit-content;
+    height: fit-content;
+    background: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    min-width: 180px;
+    color: var(--black);
+    font-family: var(--font);
+    font-size: var(--sm);
+    transition: .2s linear all;
+    cursor: default;
+
+    &:hover,
+    &.hovered,
+    &.selected {
+        border-color: var(--accent);
+
+        .header {
+            border-color: var(--accent);
+        }
+
+        .handle {
+            opacity: 1;
+        }
+    }
+
+    .handle {
+        width: 8px;
+        height: 8px;
+        background: var(--accent);
+        border: 2px solid var(--white);
+        border-radius: 50%;
+        transition: 0.2s linear all;
+        opacity: 0;
+        pointer-events: all;
+        box-sizing: border-box;
+    }
+
+    .header {
+        height: 24px;
+        padding: 4px;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid var(--black);
+        transition: .2s linear all;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        .edit-icon {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    .section {
+        padding: 4px 8px;
+        border-bottom: 1px solid var(--black);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        div {
+            white-space: nowrap;
+            font-family: monospace;
+        }
+    }
+
+    .placeholder {
+        opacity: 0.4;
+    }
+}

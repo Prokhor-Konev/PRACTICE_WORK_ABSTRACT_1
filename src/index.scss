@@ -1,0 +1,61 @@
+:root {
+    --sm: 12px;
+    --md: 16px;
+    --lg: 20px;
+
+    --black: #212529;
+    --white: #f7f9fa;
+    --accent: #629460;
+    --red: #f2636f;
+    --yellow: #f4c100;
+    --font: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    font-family: var(--font);
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: var(--md);
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+body,
+body p,
+h1,
+h2,
+h3,
+ul,
+span,
+ul li a {
+    font-family: var(--font);
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+span {
+    margin-bottom: inherit;
+}

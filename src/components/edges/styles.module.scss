@@ -1,0 +1,36 @@
+.edge {
+    stroke: var(--black) !important;
+    stroke-width: 2px;
+    transition: 0.2s linear all;
+
+    &.selected {
+        stroke: var(--accent) !important;
+    }
+}
+
+.edge-end {
+    stroke-width: 2px;
+    stroke: var(--black);
+    transition: 0.2s linear all;
+
+    &.selected {
+        stroke: var(--accent) !important;
+
+        &.composition-diamond {
+            fill: var(--accent);
+        }
+    }
+
+
+    &.inheritance-triangle {
+        fill: var(--white);
+    }
+
+    &.aggregation-diamond {
+        fill: var(--white);
+    }
+
+    &.composition-diamond {
+        fill: var(--black);
+    }
+}
